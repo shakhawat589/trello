@@ -1,0 +1,117 @@
+.login{
+    background-color: $primary-dark;
+    height: 100vh;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    &__logo{
+        width: 8rem;
+        text-align: center;
+
+        img{
+            width: 100%;
+        }
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: .8rem;
+        background-color: $primary-light;
+        padding: 1.2rem;
+        border-radius: .5rem;
+        box-shadow: 0.5rem 0.5rem 3rem rgb(0 0 0 / 50%);
+        width: 20rem;
+    }
+    
+
+    &__title{
+        color: $secondery-light;
+        h1{
+            font-size: 1.5rem;
+        }
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        width: 100%;
+    }
+
+    &__input{
+        display: flex;
+        align-items: center;
+        gap: .8rem;
+        i{
+            color: $secondery-light;
+            font-size: 1.1rem;
+        }
+        input{
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid $white;
+            padding: 0.8rem 0.2rem;
+            color: $white;
+            font-size: .8rem;
+            transition: 0.3s;
+            &:focus{
+                outline: none;
+                border-bottom: 1px solid $secondery-dark;
+            }
+        }
+        
+    }
+
+    &__remember{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1.5rem;
+        font-size: .8rem;
+        padding-bottom: .8rem;
+        a{
+            color: $white;
+            text-decoration: underline;
+            transition: .3s;
+            &:hover{
+                color: $secondery-light;
+            }
+        }
+    }
+
+    &__btn{
+        border: none;
+        background-color: $secondery-light;
+        padding: 0.7rem 0.5rem;
+        border-radius: 0.3rem;
+        font-size: 1.1rem;
+        font-size: bold;
+        text-transform: uppercase;
+        transition: 0.3s;
+        &:hover{
+            background-color: $secondery-dark;
+            color: $white;
+        }
+    }
+
+    &__end{
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        align-items: center;
+        a{
+            color: $secondery-light;
+        }
+    }
+}
+
+.hide{
+    transform: translate(5rem, 0);
+    display: none;
+}
