@@ -1,0 +1,11 @@
+@keyframes loginAnimation {
+  0% {
+    transform: translate(18rem, 0);
+  }
+  90% {
+    opacity: 0;
+  }
+  100%{
+    display: none;
+  }
+}

@@ -1,0 +1,76 @@
+.container{
+  background-color: $primary-dark;
+  height: 100vh;
+}
+
+.nav{
+  background-color: $primary-light;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  &__logo{
+    width: 8rem;
+    img{
+      width: 100%;
+    }
+  }
+  &__link{
+    a{
+      font-size: 1.5rem;
+      color: $white;
+      transition: 0.3s;
+      &:hover{
+        color: $secondery-light;
+      }
+    }
+  }
+}
+
+.columnContainer{
+  padding: 1rem 4rem;
+}
+
+.column{
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 22rem;
+  border-radius: .2rem;
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  &__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h2{
+      font-size: 1.2rem;
+      margin: 0;
+      padding: 0;
+    }
+    a{
+      font-size: 1.4rem;
+      transition: 0.3s;
+      &:hover{
+        color: $secondery-light;
+      }
+    }
+  }
+  &__body{
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+  }
+  &__card{
+    background-color: $white;
+    padding: .5rem;
+    border-radius: .2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h3{
+      font-size: 1.2rem;
+      margin: 0;
+    }
+  }
+}

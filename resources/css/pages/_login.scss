@@ -26,6 +26,7 @@
         border-radius: .5rem;
         box-shadow: 0.5rem 0.5rem 3rem rgb(0 0 0 / 50%);
         width: 20rem;
+        transition: 1s;
     }
     
 
@@ -107,11 +108,15 @@
         align-items: center;
         a{
             color: $secondery-light;
+            cursor: pointer;
         }
     }
 }
 
 .hide{
-    transform: translate(5rem, 0);
+    animation-name: loginAnimation;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
     display: none;
 }
